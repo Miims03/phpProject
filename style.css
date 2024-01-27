@@ -42,7 +42,7 @@
 .b100{
     height: 150px;
     width: 150px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: black;
     border-radius: 50%;
     position: absolute;
     right: 5rem;
@@ -60,7 +60,7 @@
 .b50{
     height: 75px;
     width: 75px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: rgba(0, 0, 0, 0.641);
     border-radius: 50%;
     position: absolute;
     right: 9rem;
@@ -69,7 +69,7 @@
 .b25{
     height: 37.5px;
     width: 37.5px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: rgba(0, 0, 0, 0.378);
     border-radius: 50%;
     position: absolute;
     right: 11rem;
@@ -78,7 +78,7 @@
 .b0{
     height: 18.75px;
     width: 18.75px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: rgba(0, 0, 0, 0.154);
     border-radius: 50%;
     position: absolute;
     right: 12.5rem;
@@ -87,7 +87,7 @@
 .bb100{
     height: 150px;
     width: 150px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: black;
     border-radius: 50%;
     position: absolute;
     left: 5rem;
@@ -105,7 +105,7 @@
 .bb50{
     height: 75px;
     width: 75px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: rgba(0, 0, 0, 0.641);
     border-radius: 50%;
     position: absolute;
     left: 9rem;
@@ -114,7 +114,7 @@
 .bb25{
     height: 37.5px;
     width: 37.5px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: rgba(0, 0, 0, 0.378);
     border-radius: 50%;
     position: absolute;
     left: 11rem;
@@ -123,7 +123,7 @@
 .bb0{
     height: 18.75px;
     width: 18.75px;
-    background-color: rgba(0, 0, 0, 0.793);
+    background-color: rgba(0, 0, 0, 0.154);
     border-radius: 50%;
     position: absolute;
     left: 12.5rem;
@@ -150,6 +150,13 @@ header a{
     height: 6.5rem;
     width: 6.5rem;
 }
+.loginNav{
+    width: 11rem;
+}
+.logoutNav{
+    width: 14rem;
+}
+
 header a img{
     height: 6rem;
     width: 6rem;
@@ -173,13 +180,14 @@ header nav ul{
     align-items: end;
     flex-direction: row;
     gap: 5rem;
+    margin-left: 5rem;
 }
 header nav ul li{
     width: 7rem;
     transition: 0.3s ease-in;
 }
 header nav ul li:hover{
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-weight: 500;
     text-decoration: underline 2px;
     text-underline-offset: 8px;
@@ -192,6 +200,49 @@ header nav ul li:hover{
 }
 header nav ul li a{
     font-size: 25px;
+}
+header nav .ul2{
+    height: 100%;
+    /* width: 20rem; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: row;
+    margin-left: 0;
+}
+header nav .ul2 li{
+    width: 10rem;
+    transition: 0.3s ease-in;
+    /* background-color: rgba(0, 255, 255, 0.453);   */
+}
+
+.profil{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    height: 5.1rem;
+    width: 5.3rem;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    transition: 0.3s;
+}
+.profil img:hover{
+    height: 5.1rem;
+    width: 5.3rem;
+}
+
+.profil img{
+    height: 5rem;
+    width: 5.2rem;
+    border-radius: 50%;
+    /* position: absolute;
+    right: 2rem;
+    top: 1rem; */
+    /* background-color: rgba(0, 0, 0, 0.531); */
+    /* cursor: pointer; */
 }
 
 /* ----- SECTION 1 ----- */
@@ -312,11 +363,11 @@ header nav ul li a{
     height: 5rem;
     width: 5rem;
 }
-#sec2 .cont1 .convert1 a:hover{
+/* #sec2 .cont1 .convert1 a:hover{
     border-right: 2px solid black;
     border-left: 2px solid black;
     border-bottom: none;
-}
+} */
 /* .moneyActive{
     border-right: 2px solid black;
     border-left: 2px solid black;
@@ -428,7 +479,7 @@ header nav ul li a{
 }
 #sec2 .cont1 .convert2 form .lesInputs div input{
     height: 2.5rem;
-    width: 10rem;
+    width: 15rem;
     font-size: 1.5rem;
     text-align: center;
     border: black 2px solid;
@@ -446,6 +497,294 @@ header nav ul li a{
     font-weight: 500;
 }
 
+/* ----- SECTION 3 ----- */
+
+#sec3{
+    height: 90vh;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10% 0 10%;
+}
+#sec3 h1{
+    margin-top: 5rem;
+    font-size: 50px;
+}
+#sec3 .cont1{
+    border: 2px solid black ;
+    height: 35rem;
+    width: 30rem;
+    display: block;
+}
+#sec3 .cont1 .convert1{
+    /* border-bottom: 2px solid black ; */
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#sec3 .cont1 .convert1 a{
+    border-bottom: 2px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: 0.05s;
+    cursor: pointer;
+}
+#sec3 .cont1 .convert2{
+    /* background-color: aquamarine; */
+    height: 77%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+#sec3 .cont1 .convert2 form{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ----- formLogin ----- */
+
+#sec3 .cont1 .convert2 .formLogin button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.7rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    background-color: #FAFAFA;
+    color: black;
+    border: black 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#sec3 .cont1 .convert2 .formLogin button:hover{
+    border: none;
+    background-color: black;
+    color: #FAFAFA;
+}
+#sec3 .cont1 .convert2 .formLogin .lesInputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+#sec3 .cont1 .convert2 .formLogin .lesInputs label{
+    height: 3rem;
+    width: 10rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+#sec3 .cont1 .convert2 .formLogin .lesInputs input{
+    height: 2.5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: black 2px solid;
+    appearance: none;
+    border-radius: 5px;
+}
+
+/* ----- formSign ----- */
+
+#sec3 .cont1 .convert2 .formSign button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.7rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    background-color: #FAFAFA;
+    color: black;
+    border: black 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#sec3 .cont1 .convert2 .formSign button:hover{
+    border: none;
+    background-color: black;
+    color: #FAFAFA;
+}
+#sec3 .cont1 .convert2 .formSign .lesInputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#sec3 .cont1 .convert2 .formSign .lesInputs label{
+    height: 1.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+#sec3 .cont1 .convert2 .formSign .lesInputs input{
+    height: 2rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: black 2px solid;
+    appearance: none;
+    border-radius: 5px;
+}
+/* ----- SECTION 4 ----- */
+
+#sec4{
+    height: 90vh;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 10% 0 10%;
+}
+#sec4  h1{
+    margin-top: 5rem;
+    font-size: 50px;
+}
+#sec4 form h1{
+    margin-top: 5rem;
+    font-size: 25px;
+}
+#sec4 form a{
+    height: 3rem;
+    width: 15rem;
+    font-size:22px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+#sec4 form a:hover{
+    border: none;
+    background-color: black;
+    color: #FAFAFA;
+}
+#sec5{
+    min-height: 90vh;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 10% 0 0;
+}
+#sec5 .profilMenu{
+    margin-top: 8rem;
+    width: 20%;
+    height: 40%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.7rem;
+}
+#sec5 .profilMenu ul{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+}
+#sec5 .profilMenu ul li{
+    border: 2px solid black;
+    border-right: none;
+    border-left: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    height: 3rem;
+    width: 100%;
+    padding: 0 0 0 3.5rem;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: rgba(165, 165, 165, 0.306);
+}
+#sec5 .profilMenu ul li:hover{
+    letter-spacing: 1px;
+    color: #FAFAFA;
+    background-color: black;
+}
+
+#sec5 .mid{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30rem;
+    width: 70%;
+    height: 80%;
+    /* background-color: aquamarine; */
+}
+#sec5 .mid h1{
+    font-size: 50px;
+}
+#sec5 .mid img{
+    margin-top: 5rem;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 1rem;
+}
+#sec6{
+    min-height: 90vh;
+    background: #FAFAFA;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 10% 0 10%;
+}
+#sec6 h1{
+    margin-top: 3rem;
+    font-size: 50px;
+}
+#sec6 h2{
+    font-size: 20px;
+    text-align: center;
+}
+#sec6 #canvas{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    border: 5px solid black;
+    width: 778px;
+    height: 628px;
+    margin-bottom: 5rem;
+  }
 /* ----- FOOTER ----- */
 
 footer{
@@ -460,3 +799,59 @@ footer h2{
     color: #FAFAFA;
 }
 
+
+
+/* ----- Table ----- */
+
+.lestables{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+table {
+    border: 2px solid black;
+    margin: 0 1rem 0 1rem;
+    background-color: #FAFAFA;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    /* padding: 7px 5px; */
+    height: 2.5rem;
+}
+
+table tbody td {
+    font-size: 20px;
+}
+
+table tr:nth-child(even) {
+    background: #FAFAFA;
+}
+
+table thead {
+    background: black;
+}
+
+table thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #FAFAFA;
+    text-align: center;
+    border-left: 1px solid black;
+}
+
+table thead th:first-child {
+    border-left: none;
+}
+
+table tfoot td {
+    font-size: 13px;
+}

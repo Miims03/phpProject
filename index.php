@@ -1,17 +1,10 @@
 <?php 
-require 'header.php';
+
 $titre = 'Accueil';
 $nav = "index";
+require 'header.php';
 ?>
-<a href='#' id='backArrow'>
-    <?php if ($titre != "Accueil") {
-    ?>
-    <img src="img/arrow_13737453.png">
-    <p><?php echo $titre ?></p>
-    <?php 
-    } 
-    ?>  
-</a>
+
 <section id='sec1'>
     
     <div class='cont1'>
@@ -30,7 +23,7 @@ $nav = "index";
             <p>
                 Ici se trouve la déscription demandé par le professeur.
                 <br>
-                Je ne sais pas quoi mettre donc j'invoque du lorem.
+                On ne sait pas quoi mettre donc on invoque du lorem.
                 <br>
                 InVoCaTion ... LOREM !!
                 <br>

@@ -21,10 +21,20 @@ function convertEuroFc(float $x): float{
     return $x;
 }
 function convertEuroBitcoin(float $x): float{
-    $bitcoin = 0.000026;
+    $bitcoin = 0.00003;
     $x = $x * $bitcoin;
     return $x;
 }
- 
+function convertEuroBitcoinReverse(float $x): float{
+    $euro = 38461.53846153846;
+    $x = $x * $euro;
+    return $x;
+}
 
-?>
+function get_taux($a,$b){
+    return $a / $b;
+}
+function createVar($nom, $valeur) {
+    $autoVar[$nom] = $valeur;
+    return $autoVar;
+}

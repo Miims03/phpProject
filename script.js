@@ -5,14 +5,14 @@ const formPound = document.querySelector('.formPound')
 const formFc = document.querySelector('.formFc')
 const formBitcoin = document.querySelector('.formBitcoin')
 
-const a = document.querySelectorAll('.setJs')
+const a1 = document.querySelectorAll('.setJs')
 
-const dollar = a[0]
-const dirham = a[1]
-const yen = a[2]
-const pound = a[3]
-const fc = a[4]
-const bitcoin = a[5]
+const dollar = a1[0]
+const dirham = a1[1]
+const yen = a1[2]
+const pound = a1[3]
+const fc = a1[4]
+const bitcoin = a1[5]
 
 formDollar.style.display = 'flex'
 formDirham.style.display = 'none'
@@ -337,6 +337,113 @@ bitcoin.addEventListener('click', () => {
         dollar.style.borderRightStyle = 'none'
         dollar.style.borderLeftStyle = 'none'
     }
+})
+
+
+const euroBit = document.querySelector('.euroBit')
+const bitcoinC = document.querySelector('.bitcoinC')
+
+bitcoinC.value = ''
+euroBit.value = ''
+
+const convertirBit = (source) => {
+    const euroValue = parseFloat(euroBit.value)
+    const bitcoinValue = parseFloat(bitcoinC.value)
+
+    if (!isNaN(euroValue) && source === 'euroBit') {
+        bitcoinC.value = (euroValue * 0.00003).toFixed(5)
+    }else if (!isNaN(bitcoinValue) && source === 'bitcoinC') {
+        euroBit.value = (bitcoinValue * 38461.53846153846).toFixed(3)
+    }
+}
+
+const euroFc = document.querySelector('.euroFc')
+const fcC = document.querySelector('.fcC')
+
+fcC.value = ''
+euroFc.value = ''
+
+const convertirFc = (source) => {
+    const euroValue = parseFloat(euroFc.value)
+    const fcValue = parseFloat(fcC.value)
+
+    if (!isNaN(euroValue) && source === 'euroFc') {
+        fcC.value = (euroValue * 2964.65).toFixed(2)
+    }else if (!isNaN(fcValue) && source === 'fcC') {
+        euroFc.value = (fcValue * 0.00034).toFixed(5)
+    }
+}
+
+const euroPound = document.querySelector('.euroPound')
+const PoundC = document.querySelector('.PoundC')
+
+PoundC.value = ''   
+euroPound.value = ''
+
+const convertirPound = (source) => {
+    const euroValue = parseFloat(euroPound.value)
+    const PoundValue = parseFloat(PoundC.value)
+
+    if (!isNaN(euroValue) && source === 'euroPound') {
+        PoundC.value = (euroValue * 0.85).toFixed(2)
+    }else if (!isNaN(PoundValue) && source === 'PoundC') {
+        euroPound.value = (PoundValue * 1.17).toFixed(2)
+    }
+}
+
+const euroYen = document.querySelector('.euroYen')
+const YenC = document.querySelector('.YenC')
+
+YenC.value = ''   
+euroYen.value = ''
+
+const convertirYen = (source) => {
+    const euroValue = parseFloat(euroYen.value)
+    const YenValue = parseFloat(YenC.value)
+
+    if (!isNaN(euroValue) && source === 'euroYen') {
+        YenC.value = (euroValue * 160.99).toFixed(2)
+    }else if (!isNaN(YenValue) && source === 'YenC') {
+        euroYen.value = (YenValue * 0.0062).toFixed(4)
+    }
+}
+
+const euroDirham = document.querySelector('.euroDirham')
+const DirhamC = document.querySelector('.DirhamC')
+
+DirhamC.value = ''   
+euroDirham.value = ''
+
+const convertirDirham = (source) => {
+    const euroValue = parseFloat(euroDirham.value)
+    const DirhamValue = parseFloat(DirhamC.value)
+
+    if (!isNaN(euroValue) && source === 'euroDirham') {
+        DirhamC.value = (euroValue * 10.82).toFixed(2)
+    }else if (!isNaN(DirhamValue) && source === 'DirhamC') {
+        euroDirham.value = (DirhamValue * 0.092).toFixed(3)
+    }
+}
+
+const euroDollar = document.querySelector('.euroDollar')
+const DollarC = document.querySelector('.DollarC')
+
+DollarC.value = ''   
+euroDollar.value = ''
+
+const convertirDollar = (source) => {
+    const euroValue = parseFloat(euroDollar.value)
+    const DollarValue = parseFloat(DollarC.value)
+
+    if (!isNaN(euroValue) && source === 'euroDollar') {
+        DollarC.value = (euroValue * 1.09).toFixed(2)
+    }else if (!isNaN(DollarValue) && source === 'DollarC') {
+        euroDollar.value = (DollarValue * 0,92).toFixed(2)
+    }
+}
+
+document.getElementById('conversionForm').addEventListener('submit', (e)=>{
+    e.preventDefault()
 })
 
 
