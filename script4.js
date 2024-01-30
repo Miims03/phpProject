@@ -11,10 +11,32 @@ let frame = 0
 let speed = 0
 const speedFrame = 5
 // let i = 0
-// let currentAction = 'run'
+let currentAction = 'run'
 // let currentAction = 'dash'
-let currentAction = 'jump'  
+// let currentAction = 'jump'  
 // let currentAction = 'attack'
+
+const btnRun = document.querySelector('.btnRun')
+
+btnRun.addEventListener('click',()=>{
+    currentAction = btnRun.value
+})
+const btnDash = document.querySelector('.btnDash')
+
+btnDash.addEventListener('click',()=>{
+    currentAction = btnDash.value
+})
+const btnAttack = document.querySelector('.btnAttack')
+
+btnAttack.addEventListener('click',()=>{
+    currentAction = btnAttack.value
+})
+const btnJump = document.querySelector('.btnJump')
+
+btnJump.addEventListener('click',()=>{
+    currentAction = btnJump.value
+})
+
 
 const actionName = ['run','attack','jump','dash']
 

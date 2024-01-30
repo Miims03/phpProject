@@ -21,6 +21,15 @@
     <canvas id="canvas">
         <img id="firstImg">
     </canvas>
+    <div class='control1'>
+        <button class='btnRun' value='run'>Run</button>
+        <button class='btnDash' value='dash'>Dash</button>
+    </div>
+    <div class='control2'>
+        <button class='btnAttack' value='attack'>Attack</button>
+        <button class='btnJump' value='jump'>Jump</button>
+    </div>
+    
 </section>
 
 <?php
